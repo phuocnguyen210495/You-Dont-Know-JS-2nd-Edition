@@ -1,5 +1,5 @@
 # Bạn chưa biết JS: Bắt đầu - Phiên bản thứ 2
-# Chương 1: * JavaScript là gì?
+# Chương 1: *JavaScript là gì?*
 
 Bạn chưa biết JS. Tôi cũng vậy, không đầy đủ dù sao. Không ai trong chúng tôi làm. Nhưng tất cả chúng ta đều có thể bắt đầu hiểu rõ hơn về JS.
 
@@ -41,55 +41,55 @@ Vì những lý do này, một số đã đề xuất chúng tôi sử dụng JS
 
 Khác xa hơn nữa ngôn ngữ với nhãn hiệu thuộc sở hữu của Oracle, tên chính thức của ngôn ngữ do TC39 chỉ định và được cơ quan tiêu chuẩn ECMA chính thức hóa là ** ECMAScript **. Và thực sự, kể từ năm 2016, tên ngôn ngữ chính thức cũng đã được thêm vào theo năm sửa đổi; kể từ văn bản này, đó là ECMAScript 2019, hay còn được viết tắt là ES2019.
 
-Nói cách khác, JavaScript / JS chạy trong trình duyệt của bạn hoặc trong Node.js, là * một * triển khai của tiêu chuẩn ES2019.
+Nói cách khác, JavaScript / JS chạy trong trình duyệt của bạn hoặc trong Node.js, là *một* triển khai của tiêu chuẩn ES2019.
 
-| NOTE: |
+| GHI CHÚ: |
 | :--- |
-| Don't use terms like "JS6" or "ES8" to refer to the language. Some do, but those terms only serve to perpetuate confusion. "ES20xx" or just "JS" are what you should stick to. |
+| Không sử dụng các thuật ngữ như "JS6" hoặc "ES8" để chỉ ngôn ngữ. Một số thì có, nhưng những điều khoản đó chỉ nhằm mục đích duy trì sự nhầm lẫn. "ES20xx" hoặc chỉ "JS" là những gì bạn nên sử dụng.|
 
-Whether you call it JavaScript, JS, ECMAScript, or ES2019, it's most definitely not a variant of the Java language!
+Cho dù bạn gọi nó là JavaScript, JS, ECMAScript hay ES2019, nó chắc chắn không phải là một biến thể của ngôn ngữ Java!
 
-> "Java is to JavaScript as ham is to hamster." --Jeremy Keith, 2009
+> "Java là JavaScript giống như hamster là hamster." --Jeremy Keith, 2009
 
-## Language Specification
+## Đặc điểm ngôn ngữ
 
-I mentioned TC39, the technical steering committee that manages JS. Their primary task is managing the official specification for the language. They meet regularly to vote on any agreed changes, which they then submit to ECMA, the standards organization.
+Tôi đã đề cập đến TC39, ban chỉ đạo kỹ thuật quản lý JS. Nhiệm vụ chính của họ là quản lý đặc tả chính thức cho ngôn ngữ. Họ họp thường xuyên để bỏ phiếu về bất kỳ thay đổi nào đã được đồng ý, sau đó họ sẽ đệ trình lên ECMA, tổ chức tiêu chuẩn.
 
-JS's syntax and behavior are defined in the ES specification.
+Cú pháp và hành vi của JS được định nghĩa trong đặc tả ES.
 
-ES2019 happens to be the 10th major numbered specification/revision since JS's inception in 1995, so in the specification's official URL as hosted by ECMA, you'll find "10.0":
+ES2019 tình cờ là đặc điểm kỹ thuật / bản sửa đổi được đánh số chính thứ 10 kể từ khi JS ra đời vào năm 1995, vì vậy trong URL chính thức của thông số kỹ thuật do ECMA lưu trữ, bạn sẽ tìm thấy "10.0":
 
 https://www.ecma-international.org/ecma-262/10.0/
 
-The TC39 committee is comprised of between 50 and about 100 different people from a broad section of web-invested companies, such as browser makers (Mozilla, Google, Apple) and device makers (Samsung, etc). All members of the committee are volunteers, though many of them are employees of these companies and so may receive compensation in part for their duties on the committee.
+Ủy ban TC39 bao gồm từ 50 đến khoảng 100 người khác nhau từ một bộ phận lớn các công ty đầu tư vào web, chẳng hạn như các nhà sản xuất trình duyệt (Mozilla, Google, Apple) và các nhà sản xuất thiết bị (Samsung, v.v.). Tất cả các thành viên của ủy ban đều là tình nguyện viên, mặc dù nhiều người trong số họ là nhân viên của các công ty này và do đó có thể nhận được một phần thù lao cho các nhiệm vụ của họ trong ủy ban.
 
-TC39 meets generally about every other month, usually for about three days, to review work done by members since the last meeting, discuss issues, and vote on proposals. Meeting locations rotate among member companies willing to host.
+TC39 thường họp khoảng hai tháng một lần, thường trong khoảng ba ngày, để xem xét công việc mà các thành viên đã thực hiện kể từ cuộc họp cuối cùng, thảo luận các vấn đề và bỏ phiếu về các đề xuất. Địa điểm họp luân phiên giữa các công ty thành viên sẵn sàng tổ chức.
 
-All TC39 proposals progress through a five-stage process—of course, since we're programmers, it's 0-based!—Stage 0 through Stage 4. You can read more about the Stage process here: https://tc39.es/process-document/
+Tất cả các đề xuất TC39 đều tiến triển thông qua quy trình năm giai đoạn — tất nhiên, vì chúng tôi là lập trình viên, nên nó dựa trên 0! —Phần 0 đến Giai đoạn 4. Bạn có thể đọc thêm về quy trình Giai đoạn tại đây: https://tc39.es/process-document/
 
-Stage 0 means roughly, someone on TC39 thinks it's a worthy idea and plans to champion and work on it. That means lots of ideas that non-TC39 members "propose," through informal means such as social media or blog posts, are really "pre-stage 0." You have to get a TC39 member to champion a proposal for it to be considered "Stage 0" officially.
+Giai đoạn 0 có nghĩa là đại khái, một người nào đó trên TC39 cho rằng đó là một ý tưởng xứng đáng và lên kế hoạch vô địch và bắt tay vào thực hiện. Điều đó có nghĩa là rất nhiều ý tưởng mà những người không phải là thành viên TC39 "đề xuất", thông qua các phương tiện không chính thức như mạng xã hội hoặc các bài đăng trên blog, thực sự là "tiền giai đoạn 0". Bạn phải có được một thành viên TC39 vô địch một đề xuất để nó được coi là "Giai đoạn 0" chính thức.
 
-Once a proposal reaches "Stage 4" status, it is eligible to be included in the next yearly revision of the language. It can take anywhere from several months to a few years for a proposal to work its way through these stages.
+Khi một đề xuất đạt đến trạng thái "Giai đoạn 4", đề xuất đó đủ điều kiện để được đưa vào bản sửa đổi hàng năm của ngôn ngữ. Có thể mất từ vài tháng đến vài năm để một đề xuất hoàn thành các giai đoạn này.
 
-All proposals are managed in the open, on TC39's Github repository: https://github.com/tc39/proposals
+Tất cả các đề xuất được quản lý mở, trên kho lưu trữ Github của TC39: https://github.com/tc39/proposals
 
-Anyone, whether on TC39 or not, is welcome to participate in these public discussions and the processes for working on the proposals. However, only TC39 members can attend meetings and vote on the proposals and changes. So in effect, the voice of a TC39 member carries a lot of weight in where JS will go.
+Bất kỳ ai, dù thuộc TC39 hay không, đều được hoan nghênh tham gia vào các cuộc thảo luận công khai này và các quy trình làm việc trên các đề xuất. Tuy nhiên, chỉ các thành viên TC39 mới có thể tham dự các cuộc họp và biểu quyết về các đề xuất và thay đổi. Vì vậy, trên thực tế, giọng nói của một thành viên TC39 có rất nhiều trọng lượng trong việc JS sẽ đi đến đâu.
 
-Contrary to some established and frustratingly perpetuated myth, there are *not* multiple versions of JavaScript in the wild. There's just **one JS**, the official standard as maintained by TC39 and ECMA.
+Trái ngược với một số huyền thoại lâu đời và gây khó chịu, có * không * nhiều phiên bản JavaScript trong tự nhiên. Chỉ có ** một JS **, tiêu chuẩn chính thức được duy trì bởi TC39 và ECMA.
 
-Back in the early 2000s, when Microsoft maintained a forked and reverse-engineered (and not entirely compatible) version of JS called "JScript," there were legitimately "multiple versions" of JS. But those days are long gone. It's outdated and inaccurate to make such claims about JS today.
+Trở lại đầu những năm 2000, khi Microsoft duy trì một phiên bản JS được phân nhánh và thiết kế ngược (và không hoàn toàn tương thích) được gọi là "JScript", thì hợp pháp đã có "nhiều phiên bản" của JS. Nhưng những ngày đó đã qua lâu rồi. Thật lỗi thời và không chính xác khi đưa ra những tuyên bố như vậy về JS ngày nay.
 
-All major browsers and device makers have committed to keeping their JS implementations compliant with this one central specification. Of course, engines implement features at different times. But it should never be the case that the v8 engine (Chrome's JS engine) implements a specified feature differently or incompatibly as compared to the SpiderMonkey engine (Mozilla's JS engine).
+Tất cả các trình duyệt và nhà sản xuất thiết bị lớn đã cam kết giữ cho việc triển khai JS của họ tuân thủ với một đặc tả trung tâm này. Tất nhiên, các động cơ thực hiện các tính năng vào những thời điểm khác nhau. Nhưng sẽ không bao giờ xảy ra trường hợp công cụ v8 (công cụ JS của Chrome) triển khai một tính năng được chỉ định khác hoặc không tương thích so với công cụ SpiderMonkey (công cụ JS của Mozilla).
 
-That means you can learn **one JS**, and rely on that same JS everywhere.
+Điều đó có nghĩa là bạn có thể học ** một JS ** và dựa trên cùng một JS đó ở mọi nơi.
 
-### The Web Rules Everything About (JS)
+### Web quy định mọi thứ về (JS)
 
-While the array of environments that run JS is constantly expanding (from browsers, to servers (Node.js), to robots, to lightbulbs, to...), the one environment that rules JS is the web. In other words, how JS is implemented for web browsers is, in all practicality, the only reality that matters.
+Trong khi mảng môi trường chạy JS không ngừng mở rộng (từ trình duyệt, đến máy chủ (Node.js), tới rô bốt, đến bóng đèn, tới ...), thì một môi trường quy định JS là web. Nói cách khác, cách JS được triển khai cho các trình duyệt web, trên thực tế, là thực tế duy nhất quan trọng.
 
-For the most part, the JS defined in the specification and the JS that runs in browser-based JS engines is the same. But there are some differences that must be considered.
+Đối với hầu hết các phần, JS được định nghĩa trong đặc tả và JS chạy trong các công cụ JS dựa trên trình duyệt là giống nhau. Nhưng có một số khác biệt phải được xem xét
 
-Sometimes the JS specification will dictate some new or refined behavior, and yet that won't exactly match with how it works in browser-based JS engines. Such a mismatch is historical: JS engines have had 20+ years of observable behaviors around corner cases of features that have come to be relied on by web content. As such, sometimes the JS engines will refuse to conform to a specification-dictated change because it would break that web content.
+Đôi khi đặc tả JS sẽ quy định một số hành vi mới hoặc tinh chỉnh, nhưng điều đó sẽ không khớp chính xác với cách nó hoạt động trong các công cụ JS dựa trên trình duyệt. Sự không phù hợp như vậy là lịch sử: các công cụ JS đã có hơn 20 năm hoạt động có thể quan sát được xung quanh các trường hợp góc của các tính năng đã được nội dung web dựa vào. Như vậy, đôi khi các công cụ JS sẽ từ chối tuân theo một thay đổi do đặc tả chỉ định bởi vì nó sẽ phá vỡ nội dung web đó.
 
 In these cases, often TC39 will backtrack and simply choose to conform the specification to the reality of the web. For example, TC39 planned to add a `contains(..)` method for Arrays, but it was found that this name conflicted with old JS frameworks still in use on some sites, so they changed the name to a non-conflicting `includes(..)`. The same happened with a comedic/tragic JS *community crisis* dubbed "smooshgate," where the planned `flatten(..)` method was eventually renamed `flat(..)`.
 
