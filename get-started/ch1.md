@@ -103,7 +103,7 @@ Phần B.3 bao gồm một số xung đột trong đó mã có thể chạy tron
 
 Phụ lục B *gotchas* không thường xuyên gặp phải, nhưng bạn vẫn nên tránh những cấu trúc này để được an toàn trong tương lai. Bất cứ khi nào có thể, hãy tuân thủ đặc tả JS và không dựa vào hành vi chỉ áp dụng trong một số môi trường công cụ JS nhất định.
 
-### Not All (Web) JS...
+### Không phải Tất cả (Web) JS...
 
 Is this code a JS program?
 
@@ -111,45 +111,45 @@ Is this code a JS program?
 alert("Hello, JS!");
 ```
 
-Depends on how you look at things. The `alert(..)` function shown here is not included in the JS specification, but it *is* in all web JS environments. Yet, you won't find it in Appendix B, so what gives?
+Phụ thuộc vào cách bạn nhìn nhận mọi thứ. Các `alert(..)` hàm hiển thị ở đây không được bao gồm trong đặc tả JS, nhưng nó *là* trong tất cả các môi trường JS web. Tuy nhiên, bạn sẽ không tìm thấy nó trong Phụ lục B, vậy điều gì mang lại?
 
-Various JS environments (like browser JS engines, Node.js, etc.) add APIs into the global scope of your JS programs that give you environment-specific capabilities, like being able to pop an alert-style box in the user's browser.
+Các môi trường JS khác nhau (như công cụ JS của trình duyệt, Node.js, v.v.) thêm các API vào phạm vi toàn cầu của các chương trình JS của bạn để cung cấp cho bạn các khả năng dành riêng cho môi trường, chẳng hạn như có thể bật một hộp kiểu cảnh báo trong trình duyệt của người dùng.
 
-In fact, a wide range of JS-looking APIs, like `fetch(..)`, `getCurrentLocation(..)`, and `getUserMedia(..)`, are all web APIs that look like JS. In Node.js, we can access hundreds of API methods from various built-in modules, like `fs.write(..)`.
+Trên thực tế, một loạt các API trông như JS, như `fetch(..)`, `getCurrentLocation(..)`, và `getUserMedia(..)`, là tất cả các API web trông giống như JS. Trong Node.js, chúng ta có thể truy cập hàng trăm phương thức API từ các mô-đun tích hợp sẵn khác nhau, như `fs.write(..)`.
 
-Another common example is `console.log(..)` (and all the other `console.*` methods!). These are not specified in JS, but because of their universal utility are defined by pretty much every JS environment, according to a roughly agreed consensus.
+Một ví dụ phổ biến khác là `console.log(..)` (và tất cả những thứ khác `console.*` phương thức!). Chúng không được chỉ định trong JS, nhưng vì tiện ích phổ biến của chúng được định nghĩa bởi khá nhiều môi trường JS, theo một consensu đã được thống nhất.
 
-So `alert(..)` and `console.log(..)` are not defined by JS. But they *look* like JS. They are functions and object methods and they obey JS syntax rules. The behaviors behind them are controlled by the environment running the JS engine, but on the surface they definitely have to abide by JS to be able to play in the JS playground.
+Vì thế `alert(..)`và `console.log(..)` không được định nghĩa bởi JS. Nhưng chúng * trông * giống JS. Chúng là các hàm và các phương thức đối tượng và chúng tuân theo các quy tắc cú pháp JS. Các hành vi đằng sau chúng được kiểm soát bởi môi trường chạy JS engine, nhưng bề ngoài thì chúng chắc chắn phải tuân theo JS để có thể chơi trong sân chơi JS.
 
-Most of the cross-browser differences people complain about with "JS is so inconsistent!" claims are actually due to differences in how those environment behaviors work, not in how the JS itself works.
+Hầu hết sự khác biệt giữa các trình duyệt mà mọi người phàn nàn về "JS quá không nhất quán!" tuyên bố thực sự là do sự khác biệt về cách hoạt động của các hành vi môi trường đó, không phải do chính JS hoạt động.
 
-So an `alert(..)` call *is* JS, but `alert` itself is really just a guest, not part of the official JS specification.
+vì vậy, một `alert(..)` Gọi *là* JS, nhưng `alert` bản thân nó thực sự chỉ là một khách mời, không phải là một phần của đặc tả JS chính thức.
 
-### It's Not Always JS
+### Không phải lúc nào cũng JS
 
-Using the console/REPL (Read-Evaluate-Print-Loop) in your browser's Developer Tools (or Node) feels like a pretty straightforward JS environment at first glance. But it's not, really.
+Sử dụng bảng điều khiển / REPL (Đọc-Đánh giá-In-Vòng lặp) trong Công cụ dành cho nhà phát triển (hoặc Node) của trình duyệt của bạn, thoạt nhìn giống như một môi trường JS khá đơn giản. Nhưng nó không thực sự.
 
-Developer Tools are... tools for developers. Their primary purpose is to make life easier for developers. They prioritize DX (Developer Experience). It is *not* a goal of such tools to accurately and purely reflect all nuances of strict-spec JS behavior. As such, there's many quirks that may act as "gotchas" if you're treating the console as a *pure* JS environment.
+Developer Tools là ... công cụ dành cho các nhà phát triển. Mục đích chính của họ là làm cho cuộc sống của các nhà phát triển dễ dàng hơn. Họ ưu tiên DX (Kinh nghiệm của nhà phát triển). Mục tiêu *không phải* của các công cụ như vậy là phản ánh chính xác và thuần túy tất cả các sắc thái của hành vi JS nghiêm ngặt. Do đó, có nhiều câu hỏi kỳ quặc có thể hoạt động như "gotchas" nếu bạn đang coi bảng điều khiển như một môi trường JS *thuần túy*.
 
-This convenience is a good thing, by the way! I'm glad Developer Tools make developers' lives easier! I'm glad we have nice UX charms like auto-complete of variables/properties, etc. I'm just pointing out that we can't and shouldn't expect such tools to *always* adhere strictly to the way JS programs are handled, because that's not the purpose of these tools.
+Tiện thể này là một điều tốt, nhân tiện! Tôi rất vui vì Công cụ dành cho nhà phát triển giúp cuộc sống của các nhà phát triển dễ dàng hơn! Tôi rất vui vì chúng tôi có các tính năng UX đẹp mắt như tự động hoàn thành các biến / thuộc tính, v.v. Tôi chỉ chỉ ra rằng chúng ta không thể và không nên mong đợi các công cụ như vậy *luôn* tuân thủ nghiêm ngặt cách các chương trình JS được xử lý vì đó không phải là mục đích của những công cụ này.
 
-Since such tools vary in behavior from browser to browser, and since they change (sometimes rather frequently), I'm not going to "hardcode" any of the specific details into this text, thereby ensuring this book text is outdated quickly.
+Vì các công cụ như vậy khác nhau về hành vi giữa các trình duyệt và vì chúng thay đổi (đôi khi khá thường xuyên), tôi sẽ không "mã hóa cứng" bất kỳ chi tiết cụ thể nào vào văn bản này, do đó đảm bảo văn bản sách này nhanh chóng lỗi thời.
 
-But I'll just hint at some examples of quirks that have been true at various points in different JS console environments, to reinforce my point about not assuming native JS behavior while using them:
+Nhưng tôi sẽ chỉ gợi ý về một số ví dụ về các câu hỏi kỳ quặc đã đúng ở nhiều điểm khác nhau trong các môi trường bảng điều khiển JS khác nhau, để củng cố quan điểm của tôi về việc không giả định hành vi JS gốc khi sử dụng chúng:
 
-* Whether a `var` or `function` declaration in the top-level "global scope" of the console actually creates a real global variable (and mirrored `window` property, and vice versa!).
+* Liệu một `var`  hoặc `function` khai báo trong "phạm vi toàn cầu" cấp cao nhất của bảng điều khiển thực sự tạo ra một biến toàn cục thực (và được sao chép `window` property, và ngược lại!).
 
-* What happens with multiple `let` and `const` declarations in the top-level "global scope."
+* Điều gì xảy ra với nhiều `let` và `const` khai báo trong "phạm vi toàn cầu" cấp cao nhất.
 
-* Whether `"use strict";` on one line-entry (pressing `<enter>` after) enables strict mode for the rest of that console session, the way it would on the first line of a .js file, as well as whether you can use `"use strict";` beyond the "first line" and still get strict mode turned on for that session.
+* Liệu `"use strict";` trên một mục nhập dòng (nhấn `<enter>` sau) bật chế độ nghiêm ngặt cho phần còn lại của phiên bảng điều khiển đó, theo cách nó sẽ hoạt động trên dòng đầu tiên của tệp .js, cũng như liệu bạn có thể sử dụng `"use strict";` vượt quá "dòng đầu tiên" và vẫn bật chế độ nghiêm ngặt cho phiên đó.
 
-* How non-strict mode `this` default-binding works for function calls, and whether the "global object" used will contain expected global variables.
+* Cách chế độ không nghiêm ngặt `this` ràng buộc mặc định hoạt động đối với các lệnh gọi hàm và liệu "đối tượng toàn cục" được sử dụng có chứa các biến toàn cục dự kiến ​​hay không.
 
-* How hoisting (see Book 2, *Scope & Closures*) works across multiple line entries.
+* Cách vận thăng (xem Quyển 2, * Phạm vi & Đóng cửa *) hoạt động trên nhiều mục nhập dòng.
 
 * ...several others
 
-The developer console is not trying to pretend to be a JS compiler that handles your entered code exactly the same way the JS engine handles a .js file. It's trying to make it easy for you to quickly enter a few lines of code and see the results immediately. These are entirely different use cases, and as such, it's unreasonable to expect one tool to handle both equally.
+Bảng điều khiển dành cho nhà phát triển không cố gắng giả vờ là một trình biên dịch JS xử lý mã đã nhập của bạn chính xác giống như cách công cụ JS xử lý tệp .js. Nó đang cố gắng giúp bạn dễ dàng nhập nhanh một vài dòng mã và xem kết quả ngay lập tức. Đây là những trường hợp sử dụng hoàn toàn khác nhau và do đó, thật không hợp lý khi mong đợi một công cụ xử lý cả hai như nhau.
 
 Don't trust what behavior you see in a developer console as representing *exact* to-the-letter JS semantics; for that, read the specification. Instead, think of the console as a "JS-friendly" environment. That's useful in its own right.
 
