@@ -1,84 +1,84 @@
-# You Don't Know JS Yet - 2nd Edition
-# Preface
+# You Don't Know JS Yet - Phiên bản thứ 2
+# Lời nói đầu
 
-Welcome to the 2nd edition of the widely acclaimed *You Don't Know JS* (**YDKJS**) book series: *You Don't Know JS **Yet*** (**YDKJSY**).
+Chào mừng bạn đến với ấn bản thứ 2 của bộ sách *You Don't Know JS* (**YDKJS**) được hoan nghênh rộng rãi: *You Don't Know JS **Yet*** (**YDKJSY**).
 
-If you've read any of the 1st edition books, you can expect a refreshed approach in these new ones, with plenty of updated coverage of what's changed in JS over the last five years. But what I hope and believe you'll still *get* is the same commitment to respecting JS and digging into what really makes it tick.
+Nếu bạn đã đọc bất kỳ cuốn sách xuất bản đầu tiên nào, bạn có thể mong đợi một cách tiếp cận được làm mới trong những cuốn mới này, với nhiều thông tin cập nhật về những gì đã thay đổi trong JS trong năm năm qua. Nhưng điều tôi hy vọng và tin rằng bạn vẫn sẽ nhận được là cam kết tôn trọng JS và đào sâu vào điều gì thực sự khiến nó trở nên đáng chú ý.
 
-If this is your first time reading these books, I'm glad you're here. Prepare for a deep and extensive journey into all the corners of JavaScript.
+Nếu đây là lần đầu tiên bạn đọc những cuốn sách này, tôi rất vui vì bạn đã ở đây. Chuẩn bị cho một cuộc hành trình sâu và rộng vào tất cả các góc của JavaScript.
 
-If you are new to programming or JS, be aware that these books are not intended as a gentle "intro to JavaScript." This material is, at times, complex and challenging, and goes much deeper than is typical for a first-time learner. You're welcome here no matter what your background is, but these books are written assuming you're already comfortable with JS and have at least 6–9 months experience with it.
+Nếu bạn chưa quen với lập trình hoặc JS, hãy lưu ý rằng những cuốn sách này không phải là một "phần giới thiệu về JavaScript" nhẹ nhàng. Tài liệu này, đôi khi, phức tạp và đầy thách thức, và đi sâu hơn nhiều so với tài liệu điển hình cho người học lần đầu. Bạn được chào đón ở đây bất kể kiến ​​thức của bạn là gì, nhưng những cuốn sách này được viết với giả định bạn đã hiểu rõ về JS và có ít nhất 6–9 tháng kinh nghiệm với nó.
 
-## The Parts
+## Các bộ phận
 
-These books approach JavaScript intentionally opposite of how *The Good Parts* treats the language. No, that doesn't mean we're looking at *the bad parts*, but rather, exploring **all the parts**.
+Những cuốn sách này tiếp cận JavaScript có chủ ý ngược lại với cách xử lý ngôn ngữ *The Good Parts*. Không, điều đó không có nghĩa là chúng tôi đang xem xét *the bad parts*,nhưng đúng hơn là khám phá **all the parts**.
 
-You may have been told, or felt yourself, that JS is a deeply flawed language that was poorly designed and inconsistently implemented. Many have asserted that it's the worst most popular language in the world; that nobody writes JS because they want to, only because they have to given its place at the center of the web. That's a ridiculous, unhealthy, and wholly condescending claim.
+Có thể bạn đã được cho biết hoặc tự cảm thấy rằng JS là một ngôn ngữ có sai sót sâu sắc, được thiết kế kém và triển khai không nhất quán. Nhiều người đã khẳng định rằng đó là ngôn ngữ phổ biến nhất trên thế giới; rằng không ai viết JS bởi vì họ muốn, chỉ vì họ phải dành vị trí của nó ở trung tâm của web. Đó là một tuyên bố vô lý, không lành mạnh và hoàn toàn hạ mình.
 
-Millions of developers write JavaScript every day, and many of them appreciate and respect the language.
+Hàng triệu nhà phát triển viết JavaScript mỗi ngày và nhiều người trong số họ đánh giá cao và tôn trọng ngôn ngữ này.
 
-Like any great language, it has its brilliant parts as well as its scars. Even the creator of JavaScript himself, Brendan Eich, laments some of those parts as mistakes. But he's wrong: they weren't mistakes at all. JS is what it is today—the world's most ubiquitous and thus most influential programming language—precisely because of *all those parts*.
+Giống như bất kỳ ngôn ngữ tuyệt vời nào, nó có những phần rực rỡ cũng như những vết sẹo của nó. Ngay cả bản thân người tạo ra JavaScript, Brendan Eich, cũng than thở một số phần đó là sai lầm. Nhưng anh ấy đã sai: họ không hề sai lầm. JS là như ngày nay — ngôn ngữ lập trình phổ biến nhất trên thế giới và do đó có ảnh hưởng nhất — chính vì *all those parts*.
 
-Don't buy the lie that you should only learn and use a small collection of *good parts* while avoiding all the bad stuff. Don't buy the "X is the new Y" snake oil, that some new feature of the language instantly relegates all usage of a previous feature as obsolete and ignorant. Don't listen when someone says your code isn't "modern" because it isn't yet using a stage-0 feature that was only proposed a few weeks ago!
+Đừng mua những thứ dối trá mà bạn chỉ nên tìm hiểu và sử dụng một bộ sưu tập nhỏ các bộ phận tốt trong khi tránh tất cả những thứ xấu. Đừng mua dầu rắn "X là Y mới", vì một số tính năng mới của ngôn ngữ ngay lập tức khiến mọi cách sử dụng của một tính năng trước đó trở nên lỗi thời và thiếu hiểu biết. Đừng nghe khi ai đó nói rằng mã của bạn không "hiện đại" bởi vì nó chưa sử dụng tính năng stage-0 mới chỉ được đề xuất vài tuần trước!
 
-Every part of JS is useful. Some parts are more useful than others. Some parts require you to be more careful and intentional.
+Mọi phần của JS đều hữu ích. Một số bộ phận hữu ích hơn những bộ phận khác. Một số phần yêu cầu bạn phải cẩn thận và chủ ý hơn.
 
-I find it absurd to try to be a truly effective JavaScript developer while only using a small sliver of what the language has to offer. Can you imagine a construction worker with a toolbox full of tools, who only uses their hammer and scoffs at the screwdriver or tape measure as inferior? That's just silly.
+Tôi thấy thật vô lý khi cố gắng trở thành một nhà phát triển JavaScript thực sự hiệu quả trong khi chỉ sử dụng một phần nhỏ những gì ngôn ngữ này cung cấp. Bạn có thể tưởng tượng một công nhân xây dựng với một hộp công cụ đầy ắp công cụ, người chỉ sử dụng búa và chế giễu chiếc tuốc nơ vít hoặc thước dây là người kém cỏi? Điều đó thật ngớ ngẩn.
 
-My unreserved claim is that you should go about learning all parts of JavaScript, and where appropriate, use them! And if I may be so bold as to suggest: it's time to discard any JS books that tell you otherwise.
+Tuyên bố chưa được bảo lưu của tôi là bạn nên học tất cả các phần của JavaScript và sử dụng chúng khi thích hợp! Và nếu tôi có thể mạnh dạn đề xuất: đã đến lúc loại bỏ bất kỳ cuốn sách JS nào cho bạn biết cách khác.
 
-## The Title?
+## Tiêu đề?
 
-So what's the title of the series all about?
+Vậy tiêu đề của bộ truyện là gì?
 
-I'm not trying to insult you with criticism about your current lack of knowledge or understanding of JavaScript. I'm not suggesting you can't or won't be able to learn JavaScript. I'm not boasting about secret advanced insider wisdom that I and only a select few possess.
+Tôi không cố gắng xúc phạm bạn với những lời chỉ trích về sự thiếu kiến ​​thức hoặc hiểu biết hiện tại của bạn về JavaScript. Tôi không khuyên bạn không thể hoặc sẽ không thể học JavaScript. Tôi không khoe khoang về trí tuệ nội gián tiên tiến bí mật mà tôi và chỉ một số ít người được chọn sở hữu.
 
-Seriously, all those were real reactions to the original series title before folks even read the books. And they're baseless.
+Nghiêm túc mà nói, tất cả những điều đó đều là phản ứng thực sự với tiêu đề bộ truyện gốc trước khi mọi người thậm chí đọc sách. Và chúng vô căn cứ.
 
-The primary point of the title "You Don't Know JS Yet" is to point out that most JS developers don't take the time to really understand how the code that they write works. They know *that* it works—that it produces a desired outcome. But they either don't understand exactly *how*, or worse, they have an inaccurate mental model for the *how* that falters on closer scrutiny.
+Điểm chính của tiêu đề "Bạn chưa biết JS" là chỉ ra rằng hầu hết các nhà phát triển JS không dành thời gian để thực sự hiểu mã mà họ viết hoạt động như thế nào. Họ biết rằng nó hoạt động - rằng nó tạo ra một kết quả mong muốn. Nhưng họ hoặc không hiểu chính xác bằng cách nào, hoặc tệ hơn, họ có một mô hình tinh thần không chính xác về cách mà chúng chùn bước khi xem xét kỹ hơn.
 
-I'm presenting a gentle but earnest challenge to you the reader, to set aside the assumptions you have about JS, and approach it with fresh eyes and an invigorated curiosity that leads you to ask *why* for every line of code you write. Why does it do what it does? Why is one way better or more appropriate than the other half-dozen ways you could have accomplished it? Why do all the "popular kids" say to do X with your code, but it turns out that Y might be a better choice?
+Tôi đang đưa ra một thử thách nhẹ nhàng nhưng nghiêm túc cho bạn đọc, đó là gạt bỏ những giả định bạn có về JS, và tiếp cận nó với đôi mắt mới mẻ và sự tò mò được khơi dậy khiến bạn phải hỏi tại sao cho mỗi dòng mã bạn viết. Tại sao nó làm những gì nó làm? Tại sao một cách tốt hơn hoặc thích hợp hơn một nửa cách khác mà bạn có thể đã thực hiện được? Tại sao tất cả "những đứa trẻ nổi tiếng" đều nói làm X với mã của bạn, nhưng hóa ra Y có thể là lựa chọn tốt hơn?
 
-I added "Yet" to the title, not only because it's the second edition, but because ultimately I want these books to challenge you in a hopeful rather than discouraging way.
+Tôi đã thêm "Yet" vào tiêu đề, không chỉ vì đây là lần xuất bản thứ hai, mà bởi vì cuối cùng tôi muốn những cuốn sách này thách thức bạn một cách đầy hy vọng hơn là nản lòng.
 
-But let me be clear: I don't think it's possible to ever fully *know* JS. That's not an achievement to be obtained, but a goal to strive after. You don't finish knowing everything about JS, you just keep learning more and more as you spend more time with the language. And the deeper you go, the more you revisit what you *knew* before, and you re-learn it from that more experienced perspective.
+Nhưng hãy để tôi nói rõ: Tôi không nghĩ rằng có thể biết hoàn toàn về JS. Đó không phải là thành tích cần đạt được mà là mục tiêu phấn đấu sau này. Bạn không biết hết mọi thứ về JS, bạn chỉ tiếp tục học ngày càng nhiều hơn khi bạn dành nhiều thời gian hơn cho ngôn ngữ này. Và càng đi sâu, bạn càng xem lại những gì bạn đã biết trước đây và bạn học lại từ người cũ đó
 
-I encourage you to adopt a mindset around JavaScript, and indeed all of software development, that you will never fully have mastered it, but that you can and should keep working to get closer to that end, a journey that will stretch for the entirety of your software development career, and beyond.
+Tôi khuyến khích bạn áp dụng tư duy xung quanh JavaScript và thực sự là tất cả phát triển phần mềm, rằng bạn sẽ không bao giờ hoàn toàn thành thạo nó, nhưng bạn có thể và nên tiếp tục làm việc để tiến gần hơn đến kết thúc đó, một hành trình sẽ kéo dài toàn bộ sự nghiệp phát triển phần mềm của bạn và hơn thế nữa.
 
-You can always know JS better than you currently do. That's what I hope these YDKJSY books represent.
+Bạn luôn có thể biết JS tốt hơn bạn hiện tại. Đó là những gì tôi hy vọng những cuốn sách YDKJSY này đại diện.
 
-## The Mission
+## Nhiệm vụ
 
-The case doesn't really need to be made for why developers should take JS seriously—I think it's already more than proven worthy of first-class status among the world's programming languages.
+Trường hợp này không thực sự cần thiết vì lý do tại sao các nhà phát triển nên coi trọng JS - tôi nghĩ rằng nó đã được chứng minh là xứng đáng hơn với vị thế hạng nhất trong số các ngôn ngữ lập trình trên thế giới.
 
-But a different, more important case still needs to be made, and these books rise to that challenge.
+Nhưng một trường hợp khác, quan trọng hơn vẫn cần được thực hiện, và những cuốn sách này đã vươn lên thách thức đó.
 
-I've taught more than 5,000 developers from teams and companies all over the world, in more than 25 countries on six continents. And what I've seen is that far too often, what *counts* is generally just the result of the program, not how the program is written or how/why it works.
+Tôi đã dạy hơn 5.000 nhà phát triển từ các nhóm và công ty trên khắp thế giới, tại hơn 25 quốc gia trên sáu lục địa. Và những gì tôi đã thấy là quá thường xuyên, những gì *đếm* nói chung chỉ là kết quả của chương trình, không phải cách chương trình được viết hoặc cách / tại sao nó hoạt động.
 
-My experience not only as a developer but in teaching many other developers tells me: you will always be more effective in your development work if you more completely understand how your code works than you are solely *just* getting it to produce a desired outcome.
+Kinh nghiệm của tôi không chỉ với tư cách là một nhà phát triển mà còn trong việc giảng dạy cho nhiều nhà phát triển khác cho tôi biết: bạn sẽ luôn hiệu quả hơn trong công việc phát triển của mình nếu bạn hoàn toàn hiểu cách mã của mình hoạt động hơn là bạn chỉ *chỉ* nhận nó để tạo ra kết quả mong muốn.
 
-In other words, *good enough to work* is not, and should not be, *good enough*.
+Nói cách khác, *đủ tốt để làm việc* thì không, và không nên, *đủ tốt*.
 
-All developers regularly struggle with some piece of code not working correctly, and they can't figure out why. But far too often, JS developers will blame this on the language rather than admitting it's their own understanding that is falling short. These books serve as both the question and answer: why did it do *this*, and here's how to get it to do *that* instead.
+Tất cả các nhà phát triển thường xuyên phải vật lộn với một số đoạn mã không hoạt động chính xác và họ không thể tìm ra lý do. Nhưng quá thường xuyên, các nhà phát triển JS sẽ đổ lỗi cho điều này do ngôn ngữ này thay vì thừa nhận rằng sự hiểu biết của chính họ đang bị thiếu hụt. Những cuốn sách này đóng vai trò là cả câu hỏi và câu trả lời: tại sao nó lại làm * cái này * và đây là cách để nó làm *cái đó* thay thế.
 
-My mission with YDKJSY is to empower every single JS developer to fully own the code they write, to understand it and to write with intention and clarity.
+Nhiệm vụ của tôi với YDKJSY là trao quyền cho mọi nhà phát triển JS đơn lẻ để sở hữu hoàn toàn mã họ viết, hiểu nó và viết có chủ đích và rõ ràng.
 
-## The Path
+## Con đường
 
-Some of you have started reading this book with the goal of completing all six books, back to back.
+Một số bạn đã bắt đầu đọc cuốn sách này với mục tiêu hoàn thành tất cả sáu cuốn, liên tục.
 
-I would like to caution you to consider changing that plan.
+Tôi xin lưu ý bạn nên cân nhắc thay đổi kế hoạch đó.
 
-It is not my intention that YDKJSY be read straight through. The material in these books is dense, because JavaScript is powerful, sophisticated, and in parts rather complex. Nobody can really hope to *download* all this information to their brains in a single pass and retain any significant amount of it. That's unreasonable, and it's foolish to try.
+Tôi không có ý định đọc thẳng YDKJSY. Tài liệu trong những cuốn sách này dày đặc, bởi vì JavaScript mạnh mẽ, phức tạp và có nhiều phần khá phức tạp. Không ai có thể thực sự hy vọng *tải xuống* tất cả thông tin này vào bộ não của họ chỉ trong một lần chuyển và giữ lại bất kỳ lượng đáng kể nào của nó. Điều đó thật phi lý, và thật ngu ngốc khi thử.
 
-My suggestion is you take your time going through YDKJSY. Take one chapter, read it completely through start to finish, and then go back and re-read it section by section. Stop in between each section, and practice the code or ideas from that section. For larger concepts, it probably is a good idea to expect to spend several days digesting, re-reading, practicing, then digesting some more.
+Đề nghị của tôi là bạn dành thời gian của bạn để xem qua YDKJSY. Lấy một chương, đọc hết từ đầu đến cuối, sau đó quay lại và đọc lại từng phần. Dừng lại giữa mỗi phần và thực hành mã hoặc ý tưởng từ phần đó. Đối với các khái niệm lớn hơn, có lẽ là một ý kiến ​​hay nếu bạn dành vài ngày để đọc lại, đọc lại, thực hành, sau đó tiêu hóa thêm một số khái niệm nữa.
 
-You could spend a week or two on each chapter, and a month or two on each book, and a year or more on the whole series, and you would still not be squeezing every ounce of YDKJSY out.
+Bạn có thể dành một hoặc hai tuần cho mỗi chương, và một hoặc hai tháng cho mỗi cuốn sách và một năm hoặc hơn cho cả bộ truyện, và bạn vẫn sẽ không vắt kiệt từng chút YDKJSY.
 
-Don't binge these books; be patient and spread out your reading. Interleave reading with lots of practice on real code in your job or on projects you participate in. Wrestle with the opinions I've presented along the way, debate with others, and most of all, disagree with me! Run a study group or book club. Teach mini-workshops at your office. Write blog posts on what you've learned. Speak about these topics at local JS meetups.
+Đừng say mê những cuốn sách này; hãy kiên nhẫn và trải rộng bài đọc của bạn. Hãy xen kẽ việc đọc với nhiều thực hành về mã thực trong công việc của bạn hoặc trong các dự án mà bạn tham gia. Vật lộn với những ý kiến ​​tôi đã trình bày trong suốt quá trình, tranh luận với những người khác và hơn hết, không đồng ý với tôi! Điều hành một nhóm học tập hoặc câu lạc bộ sách. Dạy các hội thảo nhỏ tại văn phòng của bạn. Viết các bài đăng trên blog về những gì bạn đã học được. Nói về những chủ đề này tại các buổi gặp mặt JS địa phương.
 
-It's never my goal to convince you to agree with my opinion, but to encourage you to own and be able to defend your opinions. You can't get *there* with an expedient read-through of these books. That's something that takes a long while to emerge, little by little, as you study and ponder and re-visit.
+Mục tiêu của tôi không bao giờ là thuyết phục bạn đồng ý với ý kiến ​​của tôi, mà là khuyến khích bạn làm chủ và có thể bảo vệ ý kiến ​​của mình. Bạn không thể đến * ở đó * với việc đọc hết những cuốn sách này. Đó là điều mà cần một thời gian dài để xuất hiện, từng chút một, khi bạn nghiên cứu, suy ngẫm và tham quan lại.
 
-These books are meant to be a field-guide on your wanderings through JavaScript, from wherever you currently are with the language, to a place of deeper understanding. And the deeper you understand JS, the more questions you will ask and the more you will have to explore! That's what I find so exciting!
+Những cuốn sách này nhằm mục đích hướng dẫn thực địa về hành trình của bạn thông qua JavaScript, từ bất cứ nơi nào bạn đang ở với ngôn ngữ này, đến nơi hiểu biết sâu sắc hơn. Và bạn càng hiểu sâu về JS, bạn sẽ càng đặt ra nhiều câu hỏi và càng phải khám phá nhiều hơn! Đó là điều tôi thấy rất thú vị!
 
-I'm so glad you're embarking on this journey, and I am so honored you would consider and consult these books along the way. It's time to start *getting to know JS*.
+Tôi rất vui vì bạn đã bắt tay vào hành trình này, và tôi rất vinh dự khi bạn sẽ xem xét và tham khảo những cuốn sách này trong suốt chặng đường. Đã đến lúc bắt đầu *làm quen với JS*.
