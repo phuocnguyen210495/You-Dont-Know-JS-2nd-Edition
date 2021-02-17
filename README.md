@@ -1,13 +1,13 @@
 # You Don't Know JS Yet (book series) - 2nd Edition
 
-Đây là một bộ sách đi sâu vào các cơ chế cốt lỗi của ngôn ngữ JavaScript. Đây là **second edition** của bộ sách:
+Đây là một bộ sách đi sâu vào các cơ chế cốt lỗi của ngôn ngữ JavaScript. Đây là **ấn bản thứ hai** của bộ sách:
 
 <a href="https://leanpub.com/ydkjsy-get-started"><img src="get-started/images/cover.png" width="75"></a>&nbsp;&nbsp;
 <a href="https://leanpub.com/ydkjsy-scope-closures"><img src="scope-closures/images/cover.png" width="75"></a>&nbsp;&nbsp;...
 
 **Để đọc thêm về động lực và quan điểm đằng sau bộ sách này, hãy xem [Lời nói đầu](preface.md).**
 
-Nếu bạn đang tìm kiếm **first edition** sách , [chúng có thể được tìm thấy ở đây](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md).
+Nếu bạn đang tìm kiếm **ấn bản thứ nhất** sách , [chúng có thể được tìm thấy ở đây](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md).
 
 ## Nhà tài trợ cao cấp
 
@@ -23,7 +23,7 @@ Tôi muốn gửi lời cảm ơn sâu sắc và nồng nhiệt tới Marc Graba
 
 ## Tiêu đề
 
-Tôi khuyên bạn nên đọc các sách ** ấn bản thứ hai ** theo thứ tự này:
+Tôi khuyên bạn nên đọc các sách **ấn bản thứ hai** theo thứ tự này:
 
 * [Get Started](get-started/README.md) | [Buy on Leanpub](https://leanpub.com/ydkjsy-get-started) | [Buy on Amazon](https://www.amazon.com/dp/B084BNMN7T)
 * [Scope & Closures](scope-closures/README.md) | [Buy on Leanpub](https://leanpub.com/ydkjsy-scope-closures) | [Buy on Amazon](https://www.amazon.com/dp/B08634PZ3N)
