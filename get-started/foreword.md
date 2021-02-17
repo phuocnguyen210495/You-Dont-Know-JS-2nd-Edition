@@ -1,23 +1,23 @@
-# You Don't Know JS Yet: Get Started - 2nd Edition
-# Foreword
+# Bạn chưa biết JS: Bắt đầu - Phiên bản thứ 2
+# Lời tựa
 
-The first time I saw a tweet advertising the crowdfunding campaign for the original book series *You Don't Know JS*, I thought to myself that whoever the hell this Kyle Simpson is can get bent. Of course I know JavaScript! At the time I had been working in JavaScript for many years with some of tech's biggest names, so I felt justified in looking down my nose at this sweeping claim.
+Lần đầu tiên tôi nhìn thấy một tweet quảng cáo chiến dịch huy động vốn cộng đồng cho bộ sách gốc *You Don't Know JS*, tôi đã tự nghĩ rằng Kyle Simpson này là cái quái gì cũng có thể bị bẻ cong. Tất nhiên tôi biết JavaScript! Vào thời điểm đó, tôi đã làm việc trong lĩnh vực JavaScript trong nhiều năm với một số tên tuổi lớn nhất của ngành công nghệ, vì vậy tôi cảm thấy có lý khi cúi đầu trước tuyên bố sâu rộng này.
 
-Once the funding for the book completed, I observed that a lot of people were really excited to read this book series and I decided to go ahead and give it a shot—you know, just to show everyone that I *do know* JavaScript. Once I dug in and poured over the texts, I experienced a profound mix of learning, surprise, and even a little anger. Kyle has a knack for saying something that challenges my world view and making me think about it until I realize what he said was actually true (I'll never admit this to him though!).
+Sau khi tài trợ cho cuốn sách hoàn thành, tôi quan sát thấy rằng rất nhiều người thực sự hào hứng khi đọc bộ sách này và tôi quyết định tiếp tục và thử một chút — bạn biết đấy, chỉ để cho mọi người thấy rằng tôi * biết * JavaScript. Khi tôi đào sâu và đọc lại các văn bản, tôi đã trải qua một sự pha trộn sâu sắc giữa học hỏi, ngạc nhiên và thậm chí là một chút tức giận. Kyle có sở trường nói điều gì đó thách thức thế giới quan của tôi và khiến tôi phải suy nghĩ về điều đó cho đến khi tôi nhận ra điều anh ấy nói thực sự là sự thật (tôi sẽ không bao giờ thừa nhận điều này với anh ấy!).
 
-So it turned out I didn't know JavaScript. I didn't know why I had adopted certain patterns; I didn't know why JavaScript behaves the way it does in certain situations, and I didn't know much of the nuance of the languages that I assumed I did. Many were things I didn't know I didn't know, and I was worse off as a developer for it.
+Hóa ra tôi không biết JavaScript. Tôi không biết tại sao tôi đã áp dụng một số mô hình nhất định; Tôi không biết tại sao JavaScript hoạt động theo cách nó hoạt động trong một số tình huống nhất định và tôi không biết nhiều về sắc thái của các ngôn ngữ mà tôi cho rằng mình đã làm. Nhiều thứ tôi không biết mà tôi không biết, và tôi tệ hơn là một nhà phát triển cho nó.
 
-This is what this book series is great for. It's not just for someone picking up the language for the first time (though it's for them, too); it's for all software craftspeople who want to master their tools, who want to understand the ins and outs of their trade, and who want to select the proper methods for solving problems.
+Đây là những gì mà bộ sách này là tuyệt vời cho. Nó không chỉ dành cho ai đó lần đầu tiên sử dụng ngôn ngữ (mặc dù nó cũng dành cho họ); nó dành cho tất cả những người làm phần mềm, những người muốn làm chủ các công cụ của họ, những người muốn hiểu sâu và ngoài giao dịch của họ và những người muốn chọn các phương pháp thích hợp để giải quyết vấn đề.
 
-The thing I appreciate about Kyle and his work is that he is delightfully uninfluenced by the zeitgeist of the programming world around him. That isn't to say he isn't aware of what's happening in the community but rather that it doesn't sway his pursuit of the best answers to the correct questions. This often has put him at odds with the latest "best practices," but in reality this is exactly what you need: a perspective removed from temporal influence and simply speaking to the underlying truth. That's why this series is so good. The first edition of *You Don't Know JS* is still accurate, years later! Not many things stand this test of time given the shifting sands of the JavaScript landscape.
+Điều tôi đánh giá cao về Kyle và công việc của anh ấy là anh ấy hoàn toàn thú vị khi không bị ảnh hưởng bởi những người theo chủ nghĩa nhiệt thành của thế giới lập trình xung quanh anh ấy. Điều đó không có nghĩa là anh ấy không nhận thức được những gì đang xảy ra trong cộng đồng mà là nó không làm ảnh hưởng đến việc theo đuổi câu trả lời tốt nhất cho các câu hỏi chính xác của anh ấy. Điều này thường khiến anh ấy mâu thuẫn với "các phương pháp hay nhất" mới nhất, nhưng trên thực tế, đây chính xác là những gì bạn cần: một viễn cảnh được loại bỏ khỏi ảnh hưởng nhất thời và chỉ đơn giản là nói với sự thật tiềm ẩn. Đó là lý do tại sao bộ truyện này rất hay. Ấn bản đầu tiên của *You Don't Know JS* vẫn chính xác, nhiều năm sau đó! Không có nhiều thứ có thể chịu được thử thách về thời gian này với sự thay đổi của bối cảnh JavaScript.
 
-Let's talk a moment about this first book itself, *Get Started*. You may be tempted to skip it as you may think that you already have "gotten started," but it's worth reading this one! You'd be surprised how much depth, nuance, and oddity there is in the underlying building blocks of JavaScript, and it's quite essential for you to grapple with these underpinnings before venturing forward into the constructs of the language. It's exactly the sort of foundation you need, to really know JavaScript.
+Hãy nói một chút về cuốn sách đầu tiên này, * Bắt đầu *. Bạn có thể muốn bỏ qua nó vì bạn có thể nghĩ rằng bạn đã "bắt đầu", nhưng rất đáng để đọc phần này! Bạn sẽ ngạc nhiên về độ sâu, sắc thái và sự kỳ lạ có trong các khối xây dựng cơ bản của JavaScript, và điều khá cần thiết để bạn phải vật lộn với những nền tảng này trước khi mạo hiểm tiến vào các cấu trúc của ngôn ngữ. Đó chính xác là loại nền tảng bạn cần, để thực sự biết JavaScript.
 
-So, do your future self a favor and dig into this book and unlock the knowledge within. These solid foundations will serve you better than any framework ever will; those come and go but we'll still be writing JavaScript itself for decades to come. Keep an open mind and challenge your preconceived notions.
+Vì vậy, hãy dành cho tương lai của bạn một lợi ích và đào sâu vào cuốn sách này và mở khóa kiến ​​thức bên trong. Những nền tảng vững chắc này sẽ phục vụ bạn tốt hơn bất kỳ khuôn khổ nào từng có; những thứ đó đến và đi nhưng chúng tôi sẽ vẫn viết JavaScript trong nhiều thập kỷ tới. Giữ một tâm trí cởi mở và thách thức những định kiến ​​của bạn.
 
-Because, as I found out myself, you probably don't know JavaScript (yet).
+Bởi vì, như tôi tự tìm hiểu, có thể bạn chưa biết JavaScript.
 
-Brian Holt<br>
-Senior Program Manager<br>
-Visual Studio Code and Node.js on Azure<br>
+Brian Holt <br>
+Giám đốc Chương trình Cấp cao <br>
+Visual Studio Code và Node.js trên Azure <br>
 Microsoft
