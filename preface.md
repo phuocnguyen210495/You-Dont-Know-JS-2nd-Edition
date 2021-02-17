@@ -1,4 +1,4 @@
-# You Don't Know JS Yet - Phiên bản thứ 2
+# Bạn chưa biết JS - Phiên bản thứ 2
 # Lời nói đầu
 
 Chào mừng bạn đến với ấn bản thứ 2 của bộ sách *You Don't Know JS* (**YDKJS**) được hoan nghênh rộng rãi: *You Don't Know JS **Yet*** (**YDKJSY**).
