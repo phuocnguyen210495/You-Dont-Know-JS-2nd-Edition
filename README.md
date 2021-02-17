@@ -27,10 +27,10 @@ Tôi khuyên bạn nên đọc các sách **ấn bản thứ hai** theo thứ t�
 
 * [Get Started](get-started/README.md) | [Buy on Leanpub](https://leanpub.com/ydkjsy-get-started) | [Buy on Amazon](https://www.amazon.com/dp/B084BNMN7T)
 * [Scope & Closures](scope-closures/README.md) | [Buy on Leanpub](https://leanpub.com/ydkjsy-scope-closures) | [Buy on Amazon](https://www.amazon.com/dp/B08634PZ3N)
-* Objects & Classes (not yet started)
-* Types & Grammar (not yet started)
-* Sync & Async (not yet started)
-* ES.Next & Beyond (not yet started)
+* Objects & Classes (vẫn chưa bắt đầu)
+* Types & Grammar (vẫn chưa bắt đầu)
+* Sync & Async (vẫn chưa bắt đầu)
+* ES.Next & Beyond (vẫn chưa bắt đầu)
 
 ## Xuất bản
 
