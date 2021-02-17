@@ -17,9 +17,7 @@ Frontend Masters là tiêu chuẩn vàng cho tài liệu đào tạo chuyên gia
 
 ----
 
-Tôi dạy [tất cả các hội thảo của tôi](https://frontendmasters.com/kyle-simpson) độc quyền thông qua Frontend Masters. Nếu bạn thích nội dung sách này, hãy xem các khóa đào tạo qua video của tôi.
-
-Tôi muốn gửi lời cảm ơn sâu sắc và nồng nhiệt tới Marc Grabanski và toàn bộ nhóm Frontend Masters, không chỉ vì công việc xuất sắc của họ với nền tảng đào tạo video, mà còn vì sự ủng hộ vững chắc của họ đối với tôi và của "You Don't Know JS" books!
+Tôi muốn gửi lời cảm ơn sâu sắc và nồng nhiệt tới Marc Grabanski và toàn bộ nhóm Frontend Masters, không chỉ vì công việc xuất sắc của họ với nền tảng đào tạo video, mà còn vì sự ủng hộ vững chắc của họ đối với tôi và của sách "You Don't Know JS"!
 
 ----
 
@@ -34,30 +32,23 @@ Tôi khuyên bạn nên đọc các sách ** ấn bản thứ hai ** theo thứ 
 * Sync & Async (not yet started)
 * ES.Next & Beyond (not yet started)
 
-If you're looking for the previous **first edition** books, [they can be found here](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md).
+## Xuất bản
 
-## Publishing
+Như mọi khi, bạn sẽ có thể đọc những cuốn sách này trực tuyến tại đây hoàn toàn miễn phí.
 
-As always, you'll be able to read these books online here entirely for free.
+Ấn bản này của sách đang được tự xuất bản thông qua xuất bản [GetiPub](https://geti.pub). Sách đã xuất bản sẽ được bán thông qua các nguồn bán lẻ sách thông thường.
 
-This edition of the books is being self-published through [GetiPub](https://geti.pub) publishing. The published books will be made available for sale through normal book retail sources.
 
-If you'd like to contribute financially towards the effort (or any of my other OSS efforts) aside from purchasing the published books, please consider these options:
+## Đóng góp
 
-* [Github Sponsorship](https://github.com/users/getify/sponsorship)
-* [Patreon](https://www.patreon.com/getify)
-* [Paypal](https://www.paypal.me/getify)
+Vui lòng đóng góp vào chất lượng của nội dung này bằng cách gửi PR để cải thiện đoạn mã, giải thích, v.v. Mặc dù các bản sửa lỗi chính tả được hoan nghênh, nhưng chúng có thể sẽ bị bắt qua quy trình chỉnh sửa / xuất bản thông thường, ** vì vậy, xin đừng lo lắng về họ ngay bây giờ. **
 
-## Contributions
+Mọi đóng góp của bạn cho nỗ lực này ** tất nhiên được đánh giá rất cao **.
 
-Please feel free to contribute to the quality of this content by submitting PRs for improvements to code snippets, explanations, etc. While typo fixes are welcomed, they will likely be caught through normal editing/publishing processes, **so please don't worry about them right now.**
+Nhưng ** VUI LÒNG ** đọc kỹ [Nguyên tắc đóng góp](CONTRIBUTING.md) trước khi gửi bài PR.
 
-Any contributions you make to this effort **are of course greatly appreciated**.
+## Giấy phép & Bản quyền
 
-But **PLEASE** read the [Contributions Guidelines](CONTRIBUTING.md) carefully before submitting a PR.
-
-## License & Copyright
-
-The materials herein are all &copy; 2019-2020 Kyle Simpson.
+Các tài liệu ở đây đều là © 2019-2020 Kyle Simpson.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.
