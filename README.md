@@ -1,33 +1,33 @@
 # You Don't Know JS Yet (book series) - 2nd Edition
 
-This is a series of books diving deep into the core mechanisms of the JavaScript language. This is the **second edition** of the book series:
+Đây là một bộ sách đi sâu vào các cơ chế cốt lỗi của ngôn ngữ JavaScript. Đây là **second edition** của bộ sách:
 
 <a href="https://leanpub.com/ydkjsy-get-started"><img src="get-started/images/cover.png" width="75"></a>&nbsp;&nbsp;
 <a href="https://leanpub.com/ydkjsy-scope-closures"><img src="scope-closures/images/cover.png" width="75"></a>&nbsp;&nbsp;...
 
-**To read more about the motivations and perspective behind this book series, check out the [Preface](preface.md).**
+**Để đọc thêm về động lực và quan điểm đằng sau bộ sách này, hãy xem [Lời nói đầu](preface.md).**
 
-If you're looking for the previous **first edition** books, [they can be found here](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md).
+Nếu bạn đang tìm kiếm **first edition** sách , [chúng có thể được tìm thấy ở đây](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md).
 
-## Premier Sponsor
+## Nhà tài trợ cao cấp
 
-This edition of the **YDKJS** book series is exclusively sponsored by [Frontend Masters](https://frontendmasters.com).
+Ấn bản này của **YDKJS** bộ sách được tài trợ độc quyền bởi [Frontend Masters](https://frontendmasters.com).
 
-Frontend Masters is the gold standard for top-of-the-line expert training material in frontend-oriented software development. With over 150 courses on all things frontend, this should be your first and only stop for quality video training on HTML, CSS, JS, and related technologies.
-
-----
-
-I teach [all my workshops](https://frontendmasters.com/kyle-simpson) exclusively through Frontend Masters. If you like this book content, please check out my video training courses.
-
-I want to extend a warm and deep thanks to Marc Grabanski and the entire Frontend Masters team, not only for their excellent work with the video training platform, but for their unwavering support of me and of the "You Don't Know JS" books!
+Frontend Masters là tiêu chuẩn vàng cho tài liệu đào tạo chuyên gia hàng đầu về phát triển phần mềm theo định hướng frontend. Với hơn 150 khóa học về giao diện người dùng, đây sẽ là điểm dừng đầu tiên và duy nhất của bạn để đào tạo video chất lượng về HTML, CSS, JS và các công nghệ liên quan.
 
 ----
 
-## Titles
+Tôi dạy [tất cả các hội thảo của tôi](https://frontendmasters.com/kyle-simpson) độc quyền thông qua Frontend Masters. Nếu bạn thích nội dung sách này, hãy xem các khóa đào tạo qua video của tôi.
 
-I recommend reading the **second edition** books in this order:
+Tôi muốn gửi lời cảm ơn sâu sắc và nồng nhiệt tới Marc Grabanski và toàn bộ nhóm Frontend Masters, không chỉ vì công việc xuất sắc của họ với nền tảng đào tạo video, mà còn vì sự ủng hộ vững chắc của họ đối với tôi và của "You Don't Know JS" books!
 
-* [Get Started](get-started/README.md) | [Buy on Leanpub](https://leanpub.com/ydkjsy-get-started) | [Buy on Amazon](https://www.amazon.com/dp/B084BNMN7T)
+----
+
+## Tiêu đề
+
+Tôi khuyên bạn nên đọc các sách ** ấn bản thứ hai ** theo thứ tự này:
+
+* [Bắt đầu](get-started/README.md) | [Buy on Leanpub](https://leanpub.com/ydkjsy-get-started) | [Buy on Amazon](https://www.amazon.com/dp/B084BNMN7T)
 * [Scope & Closures](scope-closures/README.md) | [Buy on Leanpub](https://leanpub.com/ydkjsy-scope-closures) | [Buy on Amazon](https://www.amazon.com/dp/B08634PZ3N)
 * Objects & Classes (not yet started)
 * Types & Grammar (not yet started)
