@@ -151,71 +151,71 @@ Nhưng tôi sẽ chỉ gợi ý về một số ví dụ về các câu hỏi k�
 
 Bảng điều khiển dành cho nhà phát triển không cố gắng giả vờ là một trình biên dịch JS xử lý mã đã nhập của bạn chính xác giống như cách công cụ JS xử lý tệp .js. Nó đang cố gắng giúp bạn dễ dàng nhập nhanh một vài dòng mã và xem kết quả ngay lập tức. Đây là những trường hợp sử dụng hoàn toàn khác nhau và do đó, thật không hợp lý khi mong đợi một công cụ xử lý cả hai như nhau.
 
-Don't trust what behavior you see in a developer console as representing *exact* to-the-letter JS semantics; for that, read the specification. Instead, think of the console as a "JS-friendly" environment. That's useful in its own right.
+Đừng tin tưởng hành vi nào bạn thấy trong bảng điều khiển dành cho nhà phát triển là đại diện cho ngữ nghĩa JS *chính xác* thành từng chữ cái; đối với điều đó, hãy đọc thông số kỹ thuật. Thay vào đó, hãy nghĩ về bảng điều khiển như một môi trường "thân thiện với JS". Điều đó hữu ích theo đúng nghĩa của nó.
 
-## Many Faces
+## Nhiều mặt
 
-The term "paradigm" in programming language context refers to a broad (almost universal) mindset and approach to structuring code. Within a paradigm, there are myriad variations of style and form that distinguish programs, including countless different libraries and frameworks that leave their unique signature on any given code.
+Thuật ngữ "mô hình" trong ngữ cảnh ngôn ngữ lập trình đề cập đến cách tiếp cận và tư duy rộng rãi (gần như phổ biến) để cấu trúc mã. Trong một mô hình, có vô số biến thể về kiểu và hình thức phân biệt các chương trình, bao gồm vô số thư viện và khuôn khổ khác nhau để lại chữ ký duy nhất của chúng trên bất kỳ mã nhất định nào.
 
-But no matter what a program's individual style may be, the big picture divisions around paradigms are almost always evident at first glance of any program.
+Nhưng cho dù phong cách riêng của một chương trình có thể như thế nào, thì những phân chia hình ảnh lớn xung quanh các mô hình hầu như luôn hiển nhiên trong cái nhìn đầu tiên của bất kỳ chương trình nào.
 
-Typical paradigm-level code categories include procedural, object-oriented (OO/classes), and functional (FP):
+Các danh mục mã cấp mô hình điển hình bao gồm thủ tục, hướng đối tượng (OO / lớp) và chức năng (FP):
 
-* Procedural style organizes code in a top-down, linear progression through a pre-determined set of operations, usually collected together in related units called procedures.
+* Phong cách thủ tục tổ chức mã theo tiến trình tuyến tính từ trên xuống thông qua một tập hợp các thao tác được xác định trước, thường được tập hợp lại với nhau trong các đơn vị liên quan được gọi là thủ tục.
 
-* OO style organizes code by collecting logic and data together into units called classes.
+* Kiểu OO tổ chức mã bằng cách thu thập logic và dữ liệu lại với nhau thành các đơn vị được gọi là các lớp.
 
-* FP style organizes code into functions (pure computations as opposed to procedures), and the adaptations of those functions as values.
+* Kiểu FP tổ chức mã thành các hàm (các phép tính thuần túy thay vì các thủ tục), và sự thích nghi của các hàm đó dưới dạng các giá trị.
 
-Paradigms are neither right nor wrong. They're orientations that guide and mold how programmers approach problems and solutions, how they structure and maintain their code.
+Mô hình không đúng cũng không sai. Chúng là những định hướng hướng dẫn và tạo khuôn mẫu cho cách các lập trình viên tiếp cận các vấn đề và giải pháp, cách họ cấu trúc và duy trì mã của mình.
 
-Some languages are heavily slanted toward one paradigm—C is procedural, Java/C++ are almost entirely class oriented, and Haskell is FP through and through.
+Một số ngôn ngữ nghiêng nhiều về một mô hình — C là thủ tục, Java / C ++ gần như hoàn toàn là định hướng lớp và Haskell là FP xuyên suốt.
 
-But many languages also support code patterns that can come from, and even mix and match from, different paradigms. So called "multi-paradigm languages" offer ultimate flexibility. In some cases, a single program can even have two or more expressions of these paradigms sitting side by side.
+Nhưng nhiều ngôn ngữ cũng hỗ trợ các mẫu mã có thể đến từ, và thậm chí trộn và kết hợp từ các mô hình khác nhau. Vì vậy, được gọi là "ngôn ngữ đa mô hình" cung cấp tính linh hoạt tối đa. Trong một số trường hợp, một chương trình đơn lẻ thậm chí có thể có hai hoặc nhiều biểu thức của các mô hình này nằm cạnh nhau.
 
-JavaScript is most definitely a multi-paradigm language. You can write procedural, class-oriented, or FP-style code, and you can make those decisions on a line-by-line basis instead of being forced into an all-or-nothing choice.
+JavaScript chắc chắn là một ngôn ngữ đa mô hình. Bạn có thể viết mã kiểu thủ tục, hướng lớp hoặc kiểu FP và bạn có thể đưa ra các quyết định đó trên cơ sở từng dòng thay vì bị buộc phải lựa chọn tất cả hoặc không có gì.
 
-## Backwards & Forwards
+## Lùi lại & Chuyển tiếp
 
-One of the most foundational principles that guides JavaScript is preservation of *backwards compatibility*. Many are confused by the implications of this term, and often confuse it with a related but different term: *forwards compatibility*.
+Một trong những nguyên tắc cơ bản nhất hướng dẫn JavaScript là duy trì *khả năng tương thích ngược*. Nhiều người bị nhầm lẫn bởi hàm ý của thuật ngữ này và thường nhầm lẫn nó với một thuật ngữ có liên quan nhưng khác: *khả năng tương thích chuyển tiếp*.
 
-Let's set the record straight.
+Hãy lập kỷ lục thẳng thắn.
 
-Backwards compatibility means that once something is accepted as valid JS, there will not be a future change to the language that causes that code to become invalid JS. Code written in 1995—however primitive or limited it may have been!—should still work today. As TC39 members often proclaim, "we don't break the web!"
+Khả năng tương thích ngược có nghĩa là một khi thứ gì đó được chấp nhận là JS hợp lệ, sẽ không có sự thay đổi trong tương lai đối với ngôn ngữ khiến mã đó trở thành JS không hợp lệ. Mã được viết vào năm 1995 - tuy nguyên thủy hoặc có giới hạn nhưng nó vẫn có thể hoạt động cho đến ngày nay. Như các thành viên TC39 thường tuyên bố, "chúng tôi không phá vỡ web!"
 
-The idea is that JS developers can write code with confidence that their code won't stop working unpredictably because a browser update is released. This makes the decision to choose JS for a program a more wise and safe investment, for years into the future.
+Ý tưởng là các nhà phát triển JS có thể viết mã với sự tự tin rằng mã của họ sẽ không ngừng hoạt động một cách khó lường vì bản cập nhật trình duyệt được phát hành. Điều này khiến quyết định chọn JS cho một chương trình trở thành một khoản đầu tư khôn ngoan và an toàn hơn, trong nhiều năm tới.
 
-That "guarantee" is no small thing. Maintaining backwards compatibility, stretched out across almost 25 years of the language's history, creates an enormous burden and a whole slew of unique challenges. You'd be hard pressed to find many other examples in computing of such a commitment to backwards compatibility.
+Sự “đảm bảo” đó không phải là chuyện nhỏ. Việc duy trì khả năng tương thích ngược, trải dài trong gần 25 năm lịch sử của ngôn ngữ, tạo ra một gánh nặng to lớn và vô số thách thức độc đáo. Bạn sẽ khó tìm thấy nhiều ví dụ khác trong việc tính toán cam kết tương thích ngược như vậy.
 
-The costs of sticking to this principle should not be casually dismissed. It necessarily creates a very high bar to including changing or extending the language; any decision becomes effectively permanent, mistakes and all. Once it's in JS, it can't be taken out because it might break programs, even if we'd really, really like to remove it!
+Không nên tùy tiện loại bỏ các chi phí của việc tuân thủ nguyên tắc này. Nó nhất thiết phải tạo ra một thanh cao để bao gồm việc thay đổi hoặc mở rộng ngôn ngữ; bất kỳ quyết định nào trở nên hiệu quả vĩnh viễn, sai lầm và tất cả. Một khi nó ở trong JS, nó không thể được lấy ra vì nó có thể phá vỡ các chương trình, ngay cả khi chúng tôi thực sự rất muốn xóa nó!
 
-There are some small exceptions to this rule. JS has had some backwards-incompatible changes, but TC39 is extremely cautious in doing so. They study existing code on the web (via browser data gathering) to estimate the impact of such breakage, and browsers ultimately decide and vote on whether they're willing to take the heat from users for a very small-scale breakage weighed against the benefits of fixing or improving some aspect of the language for many more sites (and users).
+Có một số ngoại lệ nhỏ đối với quy tắc này. JS đã có một số thay đổi không tương thích ngược, nhưng TC39 cực kỳ thận trọng khi làm như vậy. Họ nghiên cứu mã hiện có trên web (thông qua thu thập dữ liệu trình duyệt) để ước tính tác động của sự cố như vậy và cuối cùng, các trình duyệt sẽ quyết định và bỏ phiếu xem họ có sẵn sàng đón nhận nhiệt độ từ người dùng đối với một sự cố rất nhỏ so với lợi ích hay không sửa hoặc cải thiện một số khía cạnh của ngôn ngữ cho nhiều trang web khác (và người dùng).
 
-These kinds of changes are rare, and are almost always in corner cases of usage that are unlikely to be observably breaking in many sites.
+Những loại thay đổi này hiếm khi xảy ra và hầu như luôn xảy ra trong các trường hợp sử dụng góc mà khó có thể quan sát được ở nhiều trang web.
 
-Compare *backwards compatibility* to its counterpart, *forwards compatibility*. Being forwards-compatible means that including a new addition to the language in a program would not cause that program to break if it were run in an older JS engine. **JS is not forwards-compatible**, despite many wishing such, and even incorrectly believing the myth that it is.
+So sánh *tương thích ngược *với đối tác của nó, *tương thích chuyển tiếp *. Tương thích chuyển tiếp có nghĩa là bao gồm một bổ sung mới cho ngôn ngữ trong một chương trình sẽ không làm cho chương trình đó bị hỏng nếu nó được chạy trong một công cụ JS cũ hơn. **JS không tương thích chuyển tiếp**, mặc dù nhiều người mong muốn như vậy, và thậm chí tin tưởng sai lầm rằng nó là như vậy.
 
-HTML and CSS, by contrast, are forwards-compatible but not backwards-compatible. If you dug up some HTML or CSS written back in 1995, it's entirely possible it would not work (or work the same) today. But, if you use a new feature from 2019 in a browser from 2010, the page isn't "broken" -- the unrecognized CSS/HTML is skipped over, while the rest of the CSS/HTML would be processed accordingly.
+Ngược lại, HTML và CSS tương thích với nhau nhưng không tương thích ngược. Nếu bạn tìm hiểu một số HTML hoặc CSS được viết từ năm 1995, thì hoàn toàn có thể nó sẽ không hoạt động (hoặc hoạt động như cũ) ngày nay. Tuy nhiên, nếu bạn sử dụng một tính năng mới của năm 2019 trong trình duyệt từ năm 2010, trang sẽ không bị "hỏng" - CSS / HTML không được công nhận sẽ bị bỏ qua, trong khi phần còn lại của CSS / HTML sẽ được xử lý tương ứng.
 
-It may seem desirable for forwards-compatibility to be included in programming language design, but it's generally impractical to do so. Markup (HTML) or styling (CSS) are declarative in nature, so it's much easier to "skip over" unrecognized declarations with minimal impact to other recognized declarations.
+Có vẻ như mong muốn khả năng tương thích chuyển tiếp được đưa vào thiết kế ngôn ngữ lập trình, nhưng nói chung là không thực tế khi làm như vậy. Đánh dấu (HTML) hoặc tạo kiểu (CSS) có bản chất là khai báo, vì vậy việc "bỏ qua" các khai báo không được công nhận dễ dàng hơn nhiều với tác động tối thiểu đến các khai báo được công nhận khác.
 
-But chaos and non-determinism would ensue if a programming language engine selectively skipped statements (or even expressions!) that it didn't understand, as it's impossible to ensure that a subsequent part of the program wasn't expecting the skipped-over part to have been processed.
+Nhưng sự hỗn loạn và không xác định sẽ xảy ra nếu một công cụ ngôn ngữ lập trình bỏ qua một cách chọn lọc các câu lệnh (hoặc thậm chí cả các biểu thức!) Mà nó không hiểu, vì không thể đảm bảo rằng phần tiếp theo của chương trình không mong đợi phần bị bỏ qua đã được xử lý.
 
-Though JS isn't, and can't be, forwards-compatible, it's critical to recognize JS's backwards compatibility, including the enduring benefits to the web and the constraints and difficulties it places on JS as a result.
+Mặc dù JS không và không thể tương thích ngược, nhưng điều quan trọng là phải nhận ra khả năng tương thích ngược của JS, bao gồm những lợi ích lâu dài đối với web và kết quả là những ràng buộc và khó khăn mà nó đặt ra đối với JS.
 
 ### Jumping the Gaps
 
-Since JS is not forwards-compatible, it means that there is always the potential for a gap between code that you can write that's valid JS, and the oldest engine that your site or application needs to support. If you run a program that uses an ES2019 feature in an engine from 2016, you're very likely to see the program break and crash.
+Vì JS không tương thích với chuyển tiếp, điều đó có nghĩa là luôn có khả năng tồn tại khoảng cách giữa mã mà bạn có thể viết JS hợp lệ và công cụ cũ nhất mà trang web hoặc ứng dụng của bạn cần hỗ trợ. Nếu bạn chạy một chương trình sử dụng tính năng ES2019 trong một công cụ từ năm 2016, bạn rất có thể thấy chương trình bị hỏng và gặp sự cố.
 
-If the feature is a new syntax, the program will in general completely fail to compile and run, usually throwing a syntax error. If the feature is an API (such as ES6's `Object.is(..)`), the program may run up to a point but then throw a runtime exception and stop once it encounters the reference to the unknown API.
+Nếu tính năng là một cú pháp mới, chương trình nói chung sẽ hoàn toàn không thể biên dịch và chạy, thường là lỗi cú pháp. Nếu tính năng là một API (chẳng hạn như ES6's `Object.is(..)`), chương trình có thể chạy đến một thời điểm nhưng sau đó đưa ra một ngoại lệ thời gian chạy và dừng lại khi nó gặp phải tham chiếu đến API không xác định.
 
-Does this mean JS developers should always lag behind the pace of progress, using only code that is on the trailing edge of the oldest JS engine environments they need to support? No!
+Điều này có nghĩa là các nhà phát triển JS phải luôn tụt hậu so với tốc độ tiến độ, chỉ sử dụng mã nằm ở cạnh sau của môi trường engine JS cũ nhất mà họ cần hỗ trợ? Không!
 
-But it does mean that JS developers need to take special care to address this gap.
+Nhưng điều đó có nghĩa là các nhà phát triển JS cần phải quan tâm đặc biệt để giải quyết lỗ hổng này.
 
-For new and incompatible syntax, the solution is transpiling. Transpiling is a contrived and community-invented term to describe using a tool to convert the source code of a program from one form to another (but still as textual source code). Typically, forwards-compatibility problems related to syntax are solved by using a transpiler (the most common one being Babel (https://babeljs.io)) to convert from that newer JS syntax version to an equivalent older syntax.
+Đối với cú pháp mới và không tương thích, giải pháp là chuyển ngữ. Transpiling là một thuật ngữ do cộng đồng phát minh và sáng tạo để mô tả việc sử dụng một công cụ để chuyển đổi mã nguồn của một chương trình từ dạng này sang dạng khác (nhưng vẫn là mã nguồn dạng văn bản). Thông thường, các vấn đề tương thích chuyển tiếp liên quan đến cú pháp được giải quyết bằng cách sử dụng một bộ chuyển tiếp (phổ biến nhất là Babel (https://babeljs.io)) để chuyển đổi từ phiên bản cú pháp JS mới hơn sang một cú pháp cũ hơn tương đương.
 
-For example, a developer may write a snippet of code like:
+Ví dụ: một nhà phát triển có thể viết một đoạn mã như:
 
 ```js
 if (something) {
@@ -228,7 +228,7 @@ else {
 }
 ```
 
-This is how the code would look in the source code tree for that application. But when producing the file(s) to deploy to the public website, the Babel transpiler might convert that code to look like this:
+Đây là cách mã sẽ trông như thế nào trong cây mã nguồn cho ứng dụng đó. Nhưng khi tạo (các) tệp để triển khai lên trang web công cộng, trình chuyển đổi Babel có thể chuyển đổi mã đó thành giống như sau:
 
 ```js
 var x$0, x$1;
@@ -242,21 +242,21 @@ else {
 }
 ```
 
-The original snippet relied on `let` to create block-scoped `x` variables in both the `if` and `else` clauses which did not interfere with each other. An equivalent program (with minimal re-working) that Babel can produce just chooses to name two different variables with unique names, producing the same non-interference outcome.
+Đoạn mã gốc dựa vào `let` để tạo các biến` x` phạm vi khối trong cả mệnh đề `if` và` else` không can thiệp vào nhau. Một chương trình tương đương (với mức làm việc lại tối thiểu) mà Babel có thể tạo ra chỉ cần chọn đặt tên cho hai biến khác nhau với những tên duy nhất, tạo ra cùng một kết quả không can thiệp.
 
-| NOTE: |
+| GHI CHÚ: |
 | :--- |
-| The `let` keyword was added in ES6 (in 2015). The preceding example of transpiling would only need to apply if an application needed to run in a pre-ES6 supporting JS environment. The example here is just for simplicity of illustration. When ES6 was new, the need for such a transpilation was quite prevalent, but in 2020 it's much less common to need to support pre-ES6 environments. The "target" used for transpiliation is thus a sliding window that shifts upward only as decisions are made for a site/application to stop supporting some old browser/engine. |
+| Từ khóa `let` đã được thêm vào ES6 (năm 2015). Ví dụ trước về chuyển ngữ sẽ chỉ cần áp dụng nếu một ứng dụng cần chạy trong môi trường JS hỗ trợ trước ES6. Ví dụ ở đây chỉ mang tính chất minh họa đơn giản. Khi ES6 mới ra đời, nhu cầu chuyển đổi như vậy khá phổ biến, nhưng vào năm 2020, nhu cầu hỗ trợ môi trường trước ES6 ít phổ biến hơn nhiều. Do đó, "mục tiêu" được sử dụng để chuyển đổi là một cửa sổ trượt chỉ chuyển lên trên khi đưa ra quyết định về việc trang web / ứng dụng ngừng hỗ trợ một số trình duyệt / công cụ cũ. |
 
-You may wonder: why go to the trouble of using a tool to convert from a newer syntax version to an older one? Couldn't we just write the two variables and skip using the `let` keyword? The reason is, it's strongly recommended that developers use the latest version of JS so that their code is clean and communicates its ideas most effectively.
+Bạn có thể tự hỏi: tại sao lại gặp rắc rối khi sử dụng một công cụ để chuyển đổi từ phiên bản cú pháp mới hơn sang phiên bản cũ hơn? Chúng ta không thể chỉ viết hai biến và bỏ qua bằng cách sử dụng từ khóa `let`? Lý do là, các nhà phát triển nên sử dụng phiên bản JS mới nhất để mã của họ sạch sẽ và truyền đạt ý tưởng của nó một cách hiệu quả nhất.
 
-Developers should focus on writing the clean, new syntax forms, and let the tools take care of producing a forwards-compatible version of that code that is suitable to deploy and run on the oldest-supported JS engine environments.
+Các nhà phát triển nên tập trung vào việc viết các biểu mẫu cú pháp mới, sạch sẽ và để các công cụ đảm nhận việc tạo ra phiên bản tương thích chuyển tiếp của mã đó phù hợp để triển khai và chạy trên môi trường công cụ JS cũ nhất được hỗ trợ.
 
 ### Filling the Gaps
 
-If the forwards-compatibility issue is not related to new syntax, but rather to a missing API method that was only recently added, the most common solution is to provide a definition for that missing API method that stands in and acts as if the older environment had already had it natively defined. This pattern is called a polyfill (aka "shim").
+Nếu vấn đề tương thích chuyển tiếp không liên quan đến cú pháp mới mà là do một phương thức API bị thiếu chỉ mới được thêm gần đây, giải pháp phổ biến nhất là cung cấp định nghĩa cho phương thức API bị thiếu đó tồn tại và hoạt động như thể môi trường cũ hơn đã có nó được định nghĩa nguyên bản. Mô hình này được gọi là polyfill (còn gọi là "miếng đệm").
 
-Consider this code:
+Hãy xem xét mã này:
 
 ```js
 // getSomeRecords() returns us a promise for some
@@ -272,9 +272,9 @@ pr
 .finally(hideSpinner)  // always hide the spinner
 ```
 
-This code uses an ES2019 feature, the `finally(..)` method on the promise prototype. If this code were used in a pre-ES2019 environment, the `finally(..)` method would not exist, and an error would occur.
+Mã này sử dụng một tính năng ES2019, phương thức `cuối cùng (..)` trên nguyên mẫu lời hứa. Nếu mã này được sử dụng trong môi trường trước ES2019, phương thức `cuối cùng (..)` sẽ không tồn tại và sẽ xảy ra lỗi.
 
-A polyfill for `finally(..)` in pre-ES2019 environments could look like this:
+Một polyfill cho `cuối cùng (..)` trong môi trường trước ES2019 có thể trông như thế này:
 
 ```js
 if (!Promise.prototype.finally) {
