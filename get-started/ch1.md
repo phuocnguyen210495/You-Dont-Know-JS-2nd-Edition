@@ -1,47 +1,47 @@
-# You Don't Know JS Yet: Get Started - 2nd Edition
-# Chapter 1: What *Is* JavaScript?
+# Bạn chưa biết JS: Bắt đầu - Phiên bản thứ 2
+# Chương 1: * JavaScript là gì?
 
-You don't know JS, yet. Neither do I, not fully anyway. None of us do. But we can all start getting to know JS better.
+Bạn chưa biết JS. Tôi cũng vậy, không đầy đủ dù sao. Không ai trong chúng tôi làm. Nhưng tất cả chúng ta đều có thể bắt đầu hiểu rõ hơn về JS.
 
-In this first chapter of the first book of the *You Don't Know JS Yet* (YDKJSY) series, we will take some time to build a foundation to move forward on. We need to start by covering a variety of important background housekeeping details, clearing up some myths and misconceptions about what the language really is (and isn't!).
+Trong chương đầu tiên này của cuốn sách đầu tiên của bộ sách *Bạn chưa biết JS* (YDKJSY), chúng ta sẽ dành một chút thời gian để xây dựng nền tảng để tiếp tục. Chúng ta cần bắt đầu bằng cách bao gồm một loạt các chi tiết quan trọng về quản lý nội bộ nền tảng, xóa bỏ một số lầm tưởng và quan niệm sai lầm về ngôn ngữ thực sự là gì (và không phải!).
 
-This is valuable insight into the identity and process of how JS is organized and maintained; all JS developers should understand it. If you want to get to know JS, this is how to *get started* taking the first steps in that journey.
+Đây là cái nhìn sâu sắc có giá trị về danh tính và quy trình cách JS được tổ chức và duy trì; tất cả các nhà phát triển JS nên hiểu nó. Nếu bạn muốn làm quen với JS, đây là cách để *bắt đầu* thực hiện những bước đầu tiên trong hành trình đó.
 
-## About This Book
+## Về cuốn sách này
 
-I emphasize the word journey because *knowing JS* is not a destination, it's a direction. No matter how much time you spend with the language, you will always be able to find something else to learn and understand a little better. So don't look at this book as something to rush through for a quick achievement. Instead, patience and persistence are best as you take these first few steps.
+Tôi nhấn mạnh từ hành trình bởi vì *biết JS* không phải là đích đến, mà là hướng đi. Bất kể bạn dành bao nhiêu thời gian cho ngôn ngữ, bạn sẽ luôn có thể tìm thấy thứ khác để học và hiểu tốt hơn một chút. Vì vậy, đừng xem cuốn sách này như một thứ gì đó vội vàng để đạt được thành tích nhanh chóng. Thay vào đó, sự kiên nhẫn và kiên trì là tốt nhất khi bạn thực hiện một vài bước đầu tiên.
 
-Following this background chapter, the rest of the book lays out a high-level map of what you will find as you dig into and study JS with the YDKJSY books.
+Tiếp theo chương cơ bản này, phần còn lại của cuốn sách sẽ đưa ra một bản đồ cấp cao về những gì bạn sẽ tìm thấy khi tìm hiểu và nghiên cứu về JS với các cuốn sách YDKJSY.
 
-In particular, Chapter 4 identifies three main pillars around which the JS language is organized: scope/closures, prototypes/objects, and types/coercion. JS is a broad and sophisticated language, with many features and capabilities. But all of JS is founded on these three foundational pillars.
+Đặc biệt, Chương 4 xác định ba trụ cột chính mà ngôn ngữ JS được tổ chức xung quanh: phạm vi / đóng, nguyên mẫu / đối tượng và kiểu / cưỡng chế. JS là một ngôn ngữ rộng và phức tạp, có nhiều tính năng và khả năng. Nhưng tất cả JS đều được thành lập dựa trên ba trụ cột cơ bản này.
 
-Keep in mind that even though this book is titled "Get Started," it's **not intended as a beginner/intro book**. This book's main job is to get you ready for studying JS deeply throughout the rest of the series; it's written assuming you already have familiarity with JS over at least several months experience before moving on in YDKJSY. So to get the most out of *Get Started*, make sure you spend plenty of time writing JS code to build up your experience.
+Hãy nhớ rằng mặc dù cuốn sách này có tiêu đề "Bắt đầu", nhưng nó **không nhằm mục đích là một cuốn sách dành cho người mới bắt đầu / giới thiệu**. Công việc chính của cuốn sách này là giúp bạn sẵn sàng nghiên cứu sâu về JS trong suốt phần còn lại của bộ sách; nó được viết giả sử bạn đã quen với JS qua ít nhất vài tháng kinh nghiệm trước khi chuyển sang YDKJSY. Vì vậy, để tận dụng tối đa *Bắt đầu*, hãy đảm bảo bạn dành nhiều thời gian viết mã JS để xây dựng trải nghiệm của mình.
 
-Even if you've already written a lot of JS before, this book should not be skimmed over or skipped; take your time to fully process the material here. **A good start always depends on a solid first step.**
+Ngay cả khi bạn đã viết rất nhiều JS trước đây, cuốn sách này không nên đọc lướt qua hoặc bỏ qua; dành thời gian của bạn để xử lý đầy đủ các tài liệu ở đây. **Một khởi đầu tốt luôn phụ thuộc vào bước đầu tiên vững chắc.**
 
-## What's With That Name?
+## Có gì với tên đó?
 
-The name JavaScript is probably the most mistaken and misunderstood programming language name.
+Tên JavaScript có lẽ là tên ngôn ngữ lập trình bị nhầm lẫn và hiểu nhầm nhất.
 
-Is this language related to Java? Is it only the script form for Java? Is it only for writing scripts and not real programs?
+Ngôn ngữ này có liên quan đến Java không? Nó chỉ có dạng tập lệnh cho Java? Nó chỉ dùng để viết kịch bản chứ không phải chương trình thực?
 
-The truth is, the name JavaScript is an artifact of marketing shenanigans. When Brendan Eich first conceived of the language, he code-named it Mocha. Internally at Netscape, the brand LiveScript was used. But when it came time to publicly name the language, "JavaScript" won the vote.
+Sự thật là, cái tên JavaScript là một tạo tác của những trò lừa bịp tiếp thị. Khi Brendan Eich lần đầu tiên hình thành ngôn ngữ này, ông đã đặt tên mã cho nó là Mocha. Trong nội bộ Netscape, thương hiệu LiveScript đã được sử dụng. Nhưng đến lúc công khai tên ngôn ngữ, "JavaScript" đã giành được phiếu bầu.
 
-Why? Because this language was originally designed to appeal to an audience of mostly Java programmers, and because the word "script" was popular at the time to refer to lightweight programs. These lightweight "scripts" would be the first ones to embed inside of pages on this new thing called the web!
+Tại sao? Bởi vì ngôn ngữ này ban đầu được thiết kế để thu hút khán giả chủ yếu là các lập trình viên Java, và vì từ "script" phổ biến vào thời điểm đó để chỉ các chương trình nhẹ. Những "tập lệnh" nhẹ này sẽ là những tập lệnh đầu tiên được nhúng vào bên trong các trang trên một thứ mới được gọi là web!
 
-In other words, JavaScript was a marketing ploy to try to position this language as a palatable alternative to writing the heavier and more well-known Java of the day. It could just as easily have been called "WebJava," for that matter.
+Nói cách khác, JavaScript là một mưu đồ tiếp thị để cố gắng định vị ngôn ngữ này như một sự thay thế dễ chịu cho việc viết Java nặng hơn và nổi tiếng hơn trong ngày. Nó có thể dễ dàng được gọi là "WebJava", vì vấn đề đó.
 
-There are some superficial resemblances between JavaScript's code and Java code. Those similarities don't particularly come from shared development, but from both languages targeting developers with assumed syntax expectations from C (and to an extent, C++).
+Có một số điểm giống nhau bề ngoài giữa mã JavaScript và mã Java. Những điểm tương đồng đó đặc biệt không đến từ sự phát triển được chia sẻ, mà từ cả hai ngôn ngữ nhắm mục tiêu đến các nhà phát triển với các kỳ vọng cú pháp giả định từ C (và ở một mức độ nào đó, C ++).
 
-For example, we use the `{` to begin a block of code and the `}` to end that block of code, just like C/C++ and Java. We also use the `;` to punctuate the end of a statement.
+Ví dụ: chúng tôi sử dụng dấu `{` để bắt đầu một khối mã và `}` để kết thúc khối mã đó, giống như C / C ++ và Java. Chúng tôi cũng sử dụng dấu `;` để chấm câu cuối câu.
 
-In some ways, legal relationships run even deeper than the syntax. Oracle (via Sun), the company that still owns and runs Java, also owns the official trademark for the name "JavaScript" (via Netscape). This trademark is almost never enforced, and likely couldn't be at this point.
+Theo một số cách, các mối quan hệ pháp lý thậm chí còn sâu hơn cả cú pháp. Oracle (thông qua Sun), công ty vẫn sở hữu và điều hành Java, cũng sở hữu nhãn hiệu chính thức cho tên "JavaScript" (thông qua Netscape). Nhãn hiệu này hầu như không bao giờ được thực thi, và có thể không có vào thời điểm này.
 
-For these reasons, some have suggested we use JS instead of JavaScript. That is a very common shorthand, if not a good candidate for an official language branding itself. Indeed, these books use JS almost exclusively to refer to the language.
+Vì những lý do này, một số đã đề xuất chúng tôi sử dụng JS thay vì JavaScript. Đó là một cách viết tắt rất phổ biến, nếu không phải là một ứng cử viên sáng giá cho việc xây dựng thương hiệu ngôn ngữ chính thức. Thật vậy, những cuốn sách này hầu như chỉ sử dụng JS để tham khảo ngôn ngữ.
 
-Further distancing the language from the Oracle-owned trademark, the official name of the language specified by TC39 and formalized by the ECMA standards body is **ECMAScript**. And indeed, since 2016, the official language name has also been suffixed by the revision year; as of this writing, that's ECMAScript 2019, or otherwise abbreviated ES2019.
+Khác xa hơn nữa ngôn ngữ với nhãn hiệu thuộc sở hữu của Oracle, tên chính thức của ngôn ngữ do TC39 chỉ định và được cơ quan tiêu chuẩn ECMA chính thức hóa là ** ECMAScript **. Và thực sự, kể từ năm 2016, tên ngôn ngữ chính thức cũng đã được thêm vào theo năm sửa đổi; kể từ văn bản này, đó là ECMAScript 2019, hay còn được viết tắt là ES2019.
 
-In other words, the JavaScript/JS that runs in your browser or in Node.js, is *an* implementation of the ES2019 standard.
+Nói cách khác, JavaScript / JS chạy trong trình duyệt của bạn hoặc trong Node.js, là * một * triển khai của tiêu chuẩn ES2019.
 
 | NOTE: |
 | :--- |
