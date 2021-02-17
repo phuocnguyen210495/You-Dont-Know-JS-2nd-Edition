@@ -1,4 +1,4 @@
-# You Don't Know JS Yet (book series) - 2nd Edition
+# You Don't Know JS Yet (Bộ sách) - Phiên bản thứ 2
 
 Đây là một bộ sách đi sâu vào các cơ chế cốt lỗi của ngôn ngữ JavaScript. Đây là **ấn bản thứ hai** của bộ sách:
 
