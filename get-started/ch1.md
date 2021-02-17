@@ -91,17 +91,17 @@ Trong khi mảng môi trường chạy JS không ngừng mở rộng (từ trìn
 
 Đôi khi đặc tả JS sẽ quy định một số hành vi mới hoặc tinh chỉnh, nhưng điều đó sẽ không khớp chính xác với cách nó hoạt động trong các công cụ JS dựa trên trình duyệt. Sự không phù hợp như vậy là lịch sử: các công cụ JS đã có hơn 20 năm hoạt động có thể quan sát được xung quanh các trường hợp góc của các tính năng đã được nội dung web dựa vào. Như vậy, đôi khi các công cụ JS sẽ từ chối tuân theo một thay đổi do đặc tả chỉ định bởi vì nó sẽ phá vỡ nội dung web đó.
 
-In these cases, often TC39 will backtrack and simply choose to conform the specification to the reality of the web. For example, TC39 planned to add a `contains(..)` method for Arrays, but it was found that this name conflicted with old JS frameworks still in use on some sites, so they changed the name to a non-conflicting `includes(..)`. The same happened with a comedic/tragic JS *community crisis* dubbed "smooshgate," where the planned `flatten(..)` method was eventually renamed `flat(..)`.
+Trong những trường hợp này, thường TC39 sẽ quay lại và chỉ cần chọn để phù hợp với đặc điểm kỹ thuật cho thực tế của web. Ví dụ: TC39 đã lên kế hoạch thêm một `contains(..)` phương thức cho Mảng, nhưng người ta thấy rằng tên này xung đột với các khuôn khổ JS cũ vẫn được sử dụng trên một số trang web, vì vậy họ đã đổi tên thành không xung đột `includes(..)`. Điều tương tự cũng xảy ra với một JS hài hước / bi kịch *community crisis* được đặt tên là "Smooshgate", nơi đã lên kế hoạch `flatten(..)` phương thức cuối cùng đã được đổi tên `flat(..)`.
 
-But occasionally, TC39 will decide the specification should stick firm on some point even though it is unlikely that browser-based JS engines will ever conform.
+Nhưng đôi khi, TC39 sẽ quyết định đặc điểm kỹ thuật sẽ bám chắc vào một thời điểm nào đó mặc dù không chắc rằng các công cụ JS dựa trên trình duyệt sẽ không bao giờ tuân theo.
 
-The solution? Appendix B, "Additional ECMAScript Features for Web Browsers".[^specApB] The JS specification includes this appendix to detail out any known mismatches between the official JS specification and the reality of JS on the web. In other words, these are exceptions that are allowed *only* for web JS; other JS environments must stick to the letter of the law.
+Giải pháp? Phụ lục B, "Các tính năng ECMAScript bổ sung cho trình duyệt web". [^ SpecApB] Đặc tả JS bao gồm phụ lục này để nêu chi tiết về bất kỳ sự không khớp nào đã biết giữa đặc tả JS chính thức và thực tế của JS trên web. Nói cách khác, đây là những ngoại lệ được phép *chỉ* đối với web JS; các môi trường JS khác phải tuân theo quy định của pháp luật.
 
-Section B.1 and B.2 cover *additions* to JS (syntax and APIs) that web JS includes, again for historical reasons, but which TC39 does not plan to formally specify in the core of JS. Examples include `0`-prefixed octal literals, the global `escape(..)` / `unescape(..)` utilities, String "helpers" like `anchor(..)` and `blink()`, and the RegExp `compile(..)` method.
+Phần B.1 và B.2 bao gồm * bổ sung * cho JS (cú pháp và API) mà web JS bao gồm, một lần nữa vì lý do lịch sử, nhưng TC39 không có kế hoạch chỉ định chính thức trong lõi của JS. Các ví dụ bao gồm các ký tự bát phân có tiền tố `0`, toàn cầu `escape(..)` / `unescape(..)` tiện ích, chuỗi "trợ giúp" như `anchor(..)` và `blink()`, và RegExp `compile(..)` phương thức.
 
-Section B.3 includes some conflicts where code may run in both web and non-web JS engines, but where the behavior *could* be observably different, resulting in different outcomes. Most of the listed changes involve situations that are labeled as early errors when code is running in strict mode.
+Phần B.3 bao gồm một số xung đột trong đó mã có thể chạy trong cả công cụ JS web và không phải web, nhưng trong đó hành vi *có thể* khác nhau một cách có thể quan sát được, dẫn đến các kết quả khác nhau. Hầu hết các thay đổi được liệt kê liên quan đến các tình huống được gắn nhãn là lỗi sớm khi mã đang chạy ở chế độ nghiêm ngặt.
 
-Appendix B *gotchas* aren't encountered very often, but it's still a good idea to avoid these constructs to be future safe. Wherever possible, adhere to the JS specification and don't rely on behavior that's only applicable in certain JS engine environments.
+Phụ lục B *gotchas* không thường xuyên gặp phải, nhưng bạn vẫn nên tránh những cấu trúc này để được an toàn trong tương lai. Bất cứ khi nào có thể, hãy tuân thủ đặc tả JS và không dựa vào hành vi chỉ áp dụng trong một số môi trường công cụ JS nhất định.
 
 ### Not All (Web) JS...
 
