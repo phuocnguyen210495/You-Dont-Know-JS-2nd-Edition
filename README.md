@@ -25,7 +25,7 @@ Tôi muốn gửi lời cảm ơn sâu sắc và nồng nhiệt tới Marc Graba
 
 Tôi khuyên bạn nên đọc các sách ** ấn bản thứ hai ** theo thứ tự này:
 
-* [Bắt đầu](get-started/README.md) | [Buy on Leanpub](https://leanpub.com/ydkjsy-get-started) | [Buy on Amazon](https://www.amazon.com/dp/B084BNMN7T)
+* [Get Started](get-started/README.md) | [Buy on Leanpub](https://leanpub.com/ydkjsy-get-started) | [Buy on Amazon](https://www.amazon.com/dp/B084BNMN7T)
 * [Scope & Closures](scope-closures/README.md) | [Buy on Leanpub](https://leanpub.com/ydkjsy-scope-closures) | [Buy on Amazon](https://www.amazon.com/dp/B08634PZ3N)
 * Objects & Classes (not yet started)
 * Types & Grammar (not yet started)
@@ -41,11 +41,11 @@ Như mọi khi, bạn sẽ có thể đọc những cuốn sách này trực tuy
 
 ## Đóng góp
 
-Vui lòng đóng góp vào chất lượng của nội dung này bằng cách gửi PR để cải thiện đoạn mã, giải thích, v.v. Mặc dù các bản sửa lỗi chính tả được hoan nghênh, nhưng chúng có thể sẽ bị bắt qua quy trình chỉnh sửa / xuất bản thông thường, ** vì vậy, xin đừng lo lắng về họ ngay bây giờ. **
+Vui lòng đóng góp vào chất lượng của nội dung này bằng cách gửi PR để cải thiện đoạn mã, giải thích, v.v. Mặc dù các bản sửa lỗi chính tả được hoan nghênh, nhưng chúng có thể sẽ bị bắt qua quy trình chỉnh sửa / xuất bản thông thường, **vì vậy, xin đừng lo lắng về họ ngay bây giờ.**
 
-Mọi đóng góp của bạn cho nỗ lực này ** tất nhiên được đánh giá rất cao **.
+Mọi đóng góp của bạn cho nỗ lực này **tất nhiên được đánh giá rất cao**.
 
-Nhưng ** VUI LÒNG ** đọc kỹ [Nguyên tắc đóng góp](CONTRIBUTING.md) trước khi gửi bài PR.
+Nhưng **VUI LÒNG** đọc kỹ [Nguyên tắc đóng góp](CONTRIBUTING.md) trước khi gửi bài PR.
 
 ## Giấy phép & Bản quyền
 
